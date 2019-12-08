@@ -1,0 +1,92 @@
+.about {
+    display: flex;
+    padding-top: 80px;
+    &__text {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        position: relative;
+        &-box {
+            padding: 50px;
+            border-radius: 0 200px 200px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            position: absolute;
+            width: 95%;
+            background-color: white;
+        }
+        &-title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        &-subtext {
+            margin-bottom: 30px;
+            line-height: 1.2;
+            color: $subtitle-color;
+            font-size: 20px;
+        }
+        &-numbers {
+            display: flex;
+            span {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &-free {
+                margin-right: 20px;
+                p {
+                    color: $primary-red;
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                }
+            }
+            &-paid {
+                p {
+                    color: $primary-green;
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__video {
+        width: 50%;
+        position: relative;
+        background-color: black;
+        img {
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+        &-icon {
+            position: absolute;
+            left: 48%;
+            top: 48%;
+            padding: 20px;
+            color: $primary-color;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);
+            animation-name: move;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+                border-radius: 50%;
+                box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);
+                animation-name: move;
+                animation-iteration-count: infinite;
+                animation-duration: 1.5s;
+                animation-delay: 0.8s;
+            }
+        }
+    }
+}

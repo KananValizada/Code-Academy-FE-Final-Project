@@ -37,3 +37,12 @@ $(".header__slider").on("mouseover", () => {
 $(".header__slider").on("mouseleave", () => {
     $(".slick-arrow").hide(100)
 })
+
+// POPULAR CATEGORIES SECT SLIDER
+$('.popularCategories__tabs').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false
+});
