@@ -1,0 +1,169 @@
+.header {
+    &__tutorials {
+        background-color: #F6475F;
+        display: flex;
+        font-weight: bold;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem 0;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $primary-font;
+        &-link {
+            margin-left: 15px;
+            color: white;
+            font-weight: 700;
+        }
+        &-btn {
+            margin-left: 15px;
+            font-size: 20px;
+            opacity: 0.3;
+            cursor: pointer;
+            @include transition(all 0.3s);
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    &__contact {
+        padding: 0.7rem 0;
+        background-color: #343a40;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-mailNumber {
+            display: flex;
+            p {
+                margin-right: 10px;
+                cursor: pointer;
+                @include transition(all 0.6s);
+                i {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        &-social {
+            display: flex;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    padding: 0 10px;
+                    cursor: pointer;
+                    @include transition(all 0.6s);
+                    &:last-child {
+                        border-right: 1px solid white;
+                    }
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+            &-login {
+                background-color: transparent;
+                border: none;
+                color: white;
+                cursor: pointer;
+                padding: 0 10px;
+                @include transition(all 0.6s);
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            &-apply {
+                border-radius: 5px;
+                padding: 10px 15px;
+                @include transition(all 0.6s ease-in-out);
+            }
+        }
+    }
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            cursor: pointer;
+        }
+        &-menu {
+            display: flex;
+            li {
+                cursor: pointer;
+                padding: 20px 0;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            &-list {
+                position: relative;
+                margin: 0 10px;
+            }
+            &-subList {
+                z-index: 20;
+                position: absolute;
+                width: 120px;
+                border: 1px solid;
+                top: 40px;
+                display: none;
+                color: black;
+                background-color: white;
+                li {
+                    padding: 10px 5px;
+                }
+            }
+            &-contact {
+                margin: 0 15px;
+            }
+        }
+    }
+    &__slider {
+        color: white;
+        &-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        &-btn {
+            button {
+                padding: 15px 20px;
+                border-radius: 5px;
+            }
+            .btn {
+                margin-right: 10px;
+            }
+        }
+        &-outlineBtn {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+        }
+        &-1,
+        &-2,
+        &-3 {
+            width: 100%;
+            padding: 17rem 0;
+            text-align: center;
+        }
+        &-1 {
+            background: url("../img/banner1.jpg");
+            background-size: cover;
+        }
+        &-2 {
+            background: url("../img/banner2.jpg");
+            background-size: cover;
+        }
+        &-3 {
+            background: url("../img/banner3.jpg");
+            background-size: cover;
+        }
+    }
+}

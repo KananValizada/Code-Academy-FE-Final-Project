@@ -1,0 +1,37 @@
+.container {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+    margin: 0 auto;
+}
+
+.block {
+    display: block !important;
+}
+
+.btn {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 10);
+    }
+    &:hover::before {
+        left: 10em;
+    }
+    &::before {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        width: 2em;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -4.5em;
+        -webkit-transform: skewX(-45deg) translateX(0);
+        transform: skewX(-45deg) translateX(0);
+        @include transition(all 0.4s ease-in-out);
+    }
+}
