@@ -207,6 +207,13 @@ table {
   border-radius: 15px;
 }
 
+.count {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
 .header__tutorials {
   background-color: #F6475F;
   display: -webkit-box;

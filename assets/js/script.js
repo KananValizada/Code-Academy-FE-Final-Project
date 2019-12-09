@@ -54,12 +54,55 @@ $('.tabs-item-slide').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows:false
-    
+    arrows: false
+
 });
 $('.studentSay__slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows:false
-    
+    arrows: false
+
+});
+
+//counters
+
+let counter1 = new CountUp("about-count1", 0, 260, 0, 5, {  
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+});
+let counter2 = new CountUp("about-count2", 0, 152, 0, 5, {  
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+});
+
+
+let waypoint1 = new Waypoint({
+    element: document.getElementById('about-count1'),
+    handler: function(direction) {
+
+        if (direction == "up") {
+            counter1.reset();
+        } else {
+            counter1.start();
+        }
+
+    },
+    offset: '100%'
+});
+let waypoint2 = new Waypoint({
+    element: document.getElementById('about-count2'),
+    handler: function(direction) {
+
+        if (direction == "up") {
+            counter2.reset();
+        } else {
+            counter2.start();
+        }
+
+    },
+    offset: '100%'
 });
