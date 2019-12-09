@@ -1,0 +1,48 @@
+.ourTeachers {
+    background: url("../img/teacher_bg.jpg");
+    position: relative;
+    background-attachment: fixed;
+    &__header {
+        color: white;
+        div {
+            color: white
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(#07294D, 0.8);
+    }
+    &__wrapper {
+        z-index: 10;
+        position: relative;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        &-item {
+            width: 23%;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+            &-img {
+                margin-bottom: 10px;
+            }
+            &-name {
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            &-job {
+                color: $subtitle-color;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.onlineCourses {
+    background: url("../img/pattern_bg.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #07294D;
+        z-index: -10;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    &__form {
+        display: flex;
+        width: 50%;
+        &-wrapper {
+            padding: 50px;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            height: fit-content;
+            width: 100%;
+        }
+        &-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            span {
+                color: $primary-color
+            }
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        &-elements {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            input,
+            select {
+                background: transparent;
+                padding: 10px 20px;
+                width: 47%;
+                color: white;
+                box-sizing: border-box;
+                border: 1px solid white;
+                border-radius: 5px;
+                &::placeholder {
+                    color: white;
+                }
+            }
+            select {
+                option {
+                    color: black;
+                }
+            }
+        }
+        &-textArea {
+            textarea {
+                width: 100%;
+                background: transparent;
+                padding: 10px 20px;
+                &::placeholder {
+                    color: white;
+                }
+                box-sizing: border-box;
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+        }
+        &-button {
+            align-self: flex-start;
+            padding: 15px 25px;
+            margin-top: 10px;
+        }
+    }
+    &__img {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            align-self: flex-end;
+            font-size: 20px;
+        }
+    }
+}

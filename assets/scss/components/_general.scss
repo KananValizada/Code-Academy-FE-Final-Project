@@ -1,85 +1,119 @@
-.container {
-    padding-left: 10rem !important;
-    padding-right: 10rem !important;
-    margin: 0 auto;
-}
-
-.block {
-    display: block !important;
-}
-
-.btn {
-    background-color: $primary-color;
-    color: white;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    &:hover {
-        background-color: darken($color: $primary-color, $amount: 10);
+    .container {
+        padding-left: 10rem !important;
+        padding-right: 10rem !important;
+        margin: 0 auto;
     }
-    &:hover::before {
-        left: 15em;
+    
+    .block {
+        display: block !important;
     }
-    &::before {
-        content: "";
-        background-color: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        width: 2em;
-        display: block;
+    
+    .btn {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 10);
+        }
+        &:hover::before {
+            left: 15em;
+        }
+        &::before {
+            content: "";
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 100%;
+            width: 2em;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -4.5em;
+            -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0);
+            @include transition(all 0.4s ease-in-out);
+        }
+    }
+    
+    .sectHeader {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        &__title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 16px;
+            color: $subtitle-color;
+            line-height: 1.5;
+            width: 30rem;
+        }
+    }
+    
+    .bg-blue {
+        background-color: #38DDF7;
+    }
+    
+    .bg-red {
+        background-color: $primary-red;
+    }
+    
+    .bg-green {
+        background-color: $primary-green;
+    }
+    
+    .bg-yellow {
+        background-color: $primary-color;
+    }
+    
+    .bg-vio {
+        background-color: #f94fa4;
+    }
+    
+    @keyframes move {
+        100% {
+            box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0);
+            ;
+        }
+    }
+    
+    .iconStyle {
         position: absolute;
-        top: 0;
-        left: -4.5em;
-        -webkit-transform: skewX(-45deg) translateX(0);
-        transform: skewX(-45deg) translateX(0);
-        @include transition(all 0.4s ease-in-out);
+        left: calc(100% / 2 - 35px);
+        top: calc(100% / 2 - 35px);
+        padding: 20px;
+        color: $primary-color;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);
+        animation-name: move;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);
+            animation-name: move;
+            animation-iteration-count: infinite;
+            animation-duration: 1.5s;
+            animation-delay: 0.8s;
+        }
     }
-}
-
-.sectHeader {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    &__title {
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 20px;
+    
+    .active {
+        background-color: $primary-color !important;
+        color: white;
     }
-    &__text {
-        font-size: 16px;
-        color: $subtitle-color;
-        line-height: 1.5;
-        width: 30rem;
-    }
-}
-
-.bg-blue {
-    background-color: #38DDF7;
-}
-
-.bg-red {
-    background-color: $primary-red;
-}
-
-.bg-green {
-    background-color: $primary-green;
-}
-
-.bg-yellow {
-    background-color: $primary-color;
-}
-
-.bg-vio {
-    background-color: #f94fa4;
-}
-
-@keyframes move {
-    100% {
-        box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0);
-        ;
-    }
-}
