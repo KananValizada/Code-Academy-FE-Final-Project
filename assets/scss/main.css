@@ -1374,6 +1374,7 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 5rem;
 }
 
 .studentSay__slider-item {
@@ -1404,5 +1405,65 @@ table {
 
 .studentSay__slider-item-text {
   line-height: 1.5;
+}
+
+.ourBlog {
+  background-color: #f7f7f7;
+  padding-bottom: 5rem;
+}
+
+.ourBlog__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ourBlog__tabs-item {
+  width: 32%;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ourBlog__tabs-item-img img {
+  width: 100%;
+}
+
+.ourBlog__tabs-item-texts {
+  padding: 15px;
+}
+
+.ourBlog__tabs-item-texts a {
+  text-decoration: none;
+  color: black;
+}
+
+.ourBlog__tabs-item-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.ourBlog__tabs-item-text {
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+.ourBlog__tabs-item-foot {
+  border-top: 1px solid black;
+  padding: 20px 15px;
+}
+
+.ourBlog__tabs-item-foot i {
+  color: #FFBC09;
+}
+
+.ourBlog__tabs-item-foot span {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
