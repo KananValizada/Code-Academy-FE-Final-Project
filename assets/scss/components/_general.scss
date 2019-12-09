@@ -117,3 +117,19 @@
         background-color: $primary-color !important;
         color: white;
     }
+
+    .tabs-item-slide{
+        &:hover .ourGallery__tabs-item-hover {
+            opacity: 0.5 !important;
+            padding-top: 0;
+        }
+        &:hover img{
+            opacity: 0.4;
+        }
+    }
+    .ourGallery .slick-list{
+        z-index: 1;
+        background-color: rgba(0,0,0,0.7);
+        height: 83%;
+        border-radius: 15px;
+    }

@@ -46,3 +46,20 @@ $('.popularCategories__tabs').slick({
     autoplaySpeed: 2000,
     arrows: false
 });
+
+
+$('.tabs-item-slide').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows:false
+    
+});
+$('.studentSay__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows:false
+    
+});

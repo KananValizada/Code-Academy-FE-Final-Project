@@ -32,7 +32,43 @@
             overflow: hidden;
             text-align: center;
             background-color: white;
+            &:hover .ourTeachers__tabs-item-img-hover{
+                opacity: 1;
+                padding-bottom: 10rem
+
+            }
             &-img {
+                position: relative;
+                &-hover{
+                    opacity: 0;
+                    position: absolute;
+                    left: 0px;
+                    right: 0;
+                    top: 0;
+                    align-items: flex-end;
+                    bottom: 0;
+                    display: flex;
+                    background-color: rgba(0,0,0,0.4);
+                    justify-content: center;
+                    @include transition(all 0.5s);
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        width: 50%;
+                        justify-content: space-between;
+                        color: white;
+                        li{
+                            cursor: pointer;
+                            &:hover{
+                                color:$primary-color
+                            }
+                        }
+   
+                    }
+                }
+                img{
+                    width: 100%
+                }
                 margin-bottom: 10px;
             }
             &-name {

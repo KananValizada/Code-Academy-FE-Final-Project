@@ -191,6 +191,22 @@ table {
   color: white;
 }
 
+.tabs-item-slide:hover .ourGallery__tabs-item-hover {
+  opacity: 0.5 !important;
+  padding-top: 0;
+}
+
+.tabs-item-slide:hover img {
+  opacity: 0.4;
+}
+
+.ourGallery .slick-list {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 83%;
+  border-radius: 15px;
+}
+
 .header__tutorials {
   background-color: #F6475F;
   display: -webkit-box;
@@ -1179,53 +1195,62 @@ table {
   margin-bottom: 20px;
 }
 
-.ourGallery__tabs-item img {
-  width: 100%;
-}
-
-.ourGallery__tabs-item:hover .ourGallery__tabs-item-hover {
+.ourGallery__tabs-item:hover::before {
   opacity: 1;
-  padding-top: 0;
 }
 
-.ourGallery__tabs-item-hover {
-  padding-top: 50px;
-  opacity: 0;
+.ourGallery__tabs-item:hover a {
+  opacity: 1;
+  top: -150px;
+}
+
+.ourGallery__tabs-item:hover p {
+  opacity: 1;
+  top: -134px;
+}
+
+.ourGallery__tabs-item:before {
+  content: "";
   position: absolute;
+  bottom: 55px;
+  border-radius: 15px;
+  right: 0;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  z-index: 0;
+  opacity: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.ourGallery__tabs-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.ourGallery__tabs-item-hover-icon {
+  opacity: 0;
+  position: relative;
+  top: -130px;
+  padding: 15px;
+  z-index: 10;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
 }
 
-.ourGallery__tabs-item-hover-icon {
-  position: -webkit-sticky;
-  position: sticky;
-  padding: 15px;
-}
-
 .ourGallery__tabs-item-hover-text {
+  opacity: 0;
+  position: relative;
+  top: -114px;
+  left: calc(100% / 2 - 4rem);
   font-size: 20px;
   margin-top: 15px;
   color: white;
   font-weight: 700;
+  z-index: 5;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
 }
 
 .ourTeachers {
@@ -1276,8 +1301,60 @@ table {
   background-color: white;
 }
 
+.ourTeachers__tabs-item:hover .ourTeachers__tabs-item-img-hover {
+  opacity: 1;
+  padding-bottom: 10rem;
+}
+
 .ourTeachers__tabs-item-img {
+  position: relative;
   margin-bottom: 10px;
+}
+
+.ourTeachers__tabs-item-img-hover {
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.ourTeachers__tabs-item-img-hover ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.ourTeachers__tabs-item-img-hover ul li {
+  cursor: pointer;
+}
+
+.ourTeachers__tabs-item-img-hover ul li:hover {
+  color: #FFBC09;
+}
+
+.ourTeachers__tabs-item-img img {
+  width: 100%;
 }
 
 .ourTeachers__tabs-item-name {
@@ -1288,5 +1365,44 @@ table {
 .ourTeachers__tabs-item-job {
   color: #888888;
   margin-bottom: 15px;
+}
+
+.studentSay__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.studentSay__slider-item {
+  position: relative;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px 30px 20px 50px;
+  margin-right: 72px;
+  margin-left: 61px;
+}
+
+.studentSay__slider-item img {
+  position: absolute;
+  left: -54px;
+  border-radius: 10px;
+}
+
+.studentSay__slider-item-name {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.studentSay__slider-item-job {
+  color: #f7d322;
+  margin-bottom: 15px;
+}
+
+.studentSay__slider-item-text {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */

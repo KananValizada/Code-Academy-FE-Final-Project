@@ -1,0 +1,34 @@
+.studentSay{
+    &__slider{
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            position: relative;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 20px 30px 20px 50px;
+            margin-right: 72px;
+            margin-left: 61px;
+            img{
+                position: absolute;
+                left: -54px;
+                border-radius: 10px;
+            }
+            
+            &-name{
+                font-size: 20px;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+            &-job{
+                color: #f7d322;
+                margin-bottom: 15px;
+   
+            }
+            &-text{
+                line-height: 1.5
+            }
+        }
+
+    }
+}
