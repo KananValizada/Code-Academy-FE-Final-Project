@@ -9,7 +9,33 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            &:hover .ourBlog__tabs-item-img:after{
+                opacity: 1;
+            }
+            &:hover .ourBlog__tabs-item-img-hover{
+                opacity: 1;
+                top: calc(100% / 2 - 40px);
+            }
             &-img{
+                position: relative;
+                cursor: pointer;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    opacity: 0;
+                    top:0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: rgba(0,0,0,0.4);
+                    @include transition(all 0.5s);
+                }
+                &-hover{
+                    opacity: 0;
+                    top: calc(100% / 2 + 50px);
+                    @include transition(all 0.5s);
+                    z-index: 10;
+                }
                 img{
                     width: 100%;
                 }
@@ -46,6 +72,19 @@
               
             }
             
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        button{
+            padding: 15px 30px;
+            font-size: 22px;
+            i{
+                font-size: 16px;
+                margin-left: 10px;
+            }
         }
     }
 }

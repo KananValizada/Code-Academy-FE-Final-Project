@@ -1436,6 +1436,43 @@ table {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.ourBlog__tabs-item:hover .ourBlog__tabs-item-img:after {
+  opacity: 1;
+}
+
+.ourBlog__tabs-item:hover .ourBlog__tabs-item-img-hover {
+  opacity: 1;
+  top: calc(100% / 2 - 40px);
+}
+
+.ourBlog__tabs-item-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.ourBlog__tabs-item-img:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.ourBlog__tabs-item-img-hover {
+  opacity: 0;
+  top: calc(100% / 2 + 50px);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  z-index: 10;
+}
+
 .ourBlog__tabs-item-img img {
   width: 100%;
 }
@@ -1472,5 +1509,76 @@ table {
 
 .ourBlog__tabs-item-foot span {
   margin-right: 10px;
+}
+
+.ourBlog__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+.ourBlog__button button {
+  padding: 15px 30px;
+  font-size: 22px;
+}
+
+.ourBlog__button button i {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.ourClient {
+  padding-bottom: 50px;
+}
+
+.ourClient__slider-item {
+  margin-left: 20px;
+}
+
+.ourClient__slider-item img {
+  width: 100%;
+}
+
+.getCoaching {
+  background-color: #FFBC09;
+}
+
+.getCoaching__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.getCoaching__text {
+  width: 50%;
+  color: white;
+}
+
+.getCoaching__text-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.getCoaching__text-subtext {
+  margin-top: 20px;
+}
+
+.getCoaching__button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 25px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

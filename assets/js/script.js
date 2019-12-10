@@ -64,45 +64,70 @@ $('.studentSay__slider').slick({
 
 });
 
-//counters
+//ABOUT SECT counters
 
-let counter1 = new CountUp("about-count1", 0, 260, 0, 5, {  
+let aboutCounter1 = new CountUp("about-count1", 0, 260, 0, 5, {  
     useEasing: true,
     useGrouping: true,
     separator: ',',
     decimal: '.',
 });
-let counter2 = new CountUp("about-count2", 0, 152, 0, 5, {  
+let aboutCounter2 = new CountUp("about-count2", 0, 152, 0, 5, {  
     useEasing: true,
     useGrouping: true,
     separator: ',',
     decimal: '.',
 });
-
-
 let waypoint1 = new Waypoint({
-    element: document.getElementById('about-count1'),
+    element: document.getElementById('about-count'),
     handler: function(direction) {
-
-        if (direction == "up") {
-            counter1.reset();
-        } else {
-            counter1.start();
-        }
-
+            aboutCounter1.start();
+            aboutCounter2.start();
     },
     offset: '100%'
+});
+//START COUNTER SECT
+let Counter1 = new CountUp("counter1", 0, 1800, 0, 5, {  
+    useEasing: true,
+    useGrouping: true,
+    separator: '',
+    decimal: '.',
+});
+let Counter2 = new CountUp("counter2", 0, 70, 0, 5, {  
+    useEasing: true,
+    useGrouping: true,
+    separator: '',
+    decimal: '.',
+});
+let Counter3 = new CountUp("counter3", 0, 700, 0, 5, {  
+    useEasing: true,
+    useGrouping: true,
+    separator: '',
+    decimal: '.',
+});
+let Counter4 = new CountUp("counter4", 0, 1200, 0, 5, {  
+    useEasing: true,
+    useGrouping: true,
+    separator: '',
+    decimal: '.',
 });
 let waypoint2 = new Waypoint({
-    element: document.getElementById('about-count2'),
+    element: document.getElementById('counter'),
     handler: function(direction) {
-
-        if (direction == "up") {
-            counter2.reset();
-        } else {
-            counter2.start();
-        }
-
+            Counter1.start();
+            Counter2.start();
+            Counter3.start();
+            Counter4.start();
     },
-    offset: '100%'
+    offset: '70%'
 });
+//END COUNTER SECT
+$('.ourClient__slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+
+});
+$(".slick-slide").css("outline", "none")

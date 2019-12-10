@@ -1,0 +1,30 @@
+.getCoaching{
+    background-color: $primary-color;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+    }
+    &__text{
+        width: 50%;
+        color: white;
+        &-title{
+            font-size: 30px;
+            font-weight: 700;
+
+        }
+        &-subtext{
+            margin-top: 20px;
+
+        }
+    }
+    &__button{
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 15px 25px;
+        border-radius: 10px;
+
+    }
+}
