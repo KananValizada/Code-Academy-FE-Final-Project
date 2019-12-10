@@ -1,0 +1,20 @@
+.subFooter {
+    background-color: #202325;
+    &__row {
+        padding: 2rem 0;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+    }
+    &__policies {
+        display: flex;
+        li {
+            margin-left: 10px;
+            @include transition(all 0.5s);
+            cursor: pointer;
+            &:hover {
+                color: $primary-color
+            }
+        }
+    }
+}

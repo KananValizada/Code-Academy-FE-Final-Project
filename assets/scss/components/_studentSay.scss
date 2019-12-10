@@ -1,35 +1,35 @@
-.studentSay{
-    &__slider{
+.studentSay {
+    .slick-track {
+        padding: 40px
+    }
+    &__slider {
         display: flex;
         justify-content: space-between;
         padding-bottom: 5rem;
-        &-item{
+        &-item {
             position: relative;
-            border: 1px solid;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             padding: 20px 30px 20px 50px;
             margin-right: 72px;
             margin-left: 61px;
-            img{
+            img {
                 position: absolute;
                 left: -54px;
                 border-radius: 10px;
             }
-            
-            &-name{
+            &-name {
                 font-size: 20px;
                 margin-bottom: 15px;
                 font-weight: 700;
             }
-            &-job{
+            &-job {
                 color: #f7d322;
                 margin-bottom: 15px;
-   
             }
-            &-text{
+            &-text {
                 line-height: 1.5
             }
         }
-
     }
 }

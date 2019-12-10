@@ -92,8 +92,14 @@
         &-menu {
             display: flex;
             li {
+                i {
+                    margin-left: 5px;
+                    line-height: 2;
+                    font-size: 10px;
+                }
                 cursor: pointer;
                 padding: 20px 0;
+                @include transition(all 0.5s);
                 &:hover {
                     color: $primary-color;
                 }
@@ -133,18 +139,12 @@
         }
         &-btn {
             button {
-                padding: 15px 20px;
                 border-radius: 5px;
             }
             .btn {
+                padding: 15px 20px;
                 margin-right: 10px;
             }
-        }
-        &-outlineBtn {
-            background-color: transparent;
-            border: 2px solid white;
-            color: white;
-            cursor: pointer;
         }
         &-1,
         &-2,

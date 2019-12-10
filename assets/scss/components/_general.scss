@@ -37,6 +37,37 @@
         }
     }
     
+    .outlineBtn {
+        padding: 12px 20px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        @include transition(all 0.6s);
+        z-index: 2;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 40px;
+            z-index: -1;
+            background-color: white;
+            bottom: 0px;
+            right: 0px;
+            width: 0%;
+            @include transition(all 0.6s)
+        }
+        &:hover::before {
+            right: initial;
+            left: 0px;
+            width: 100%;
+        }
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    
     .sectHeader {
         padding-top: 50px;
         padding-bottom: 30px;

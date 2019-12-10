@@ -64,11 +64,11 @@
 .slick-prev:before,
 .slick-next:before {
     font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
+    font-size: 25px;
+    font-weight: 700;
     opacity: .75;
     background-color: black;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 50%;
     color: white;
     -webkit-font-smoothing: antialiased;
@@ -86,11 +86,13 @@
 }
 
 .slick-prev:before {
-    content: '←';
+    content: '\f053';
+    font-family: "Font Awesome 5 Free";
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '→';
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
 }
 
 .slick-next {
@@ -103,11 +105,13 @@
 }
 
 .slick-next:before {
-    content: '→';
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
 }
 
 [dir='rtl'] .slick-next:before {
-    content: '←';
+    content: '\f053';
+    font-family: "Font Awesome 5 Free";
 }
 
 
@@ -154,8 +158,6 @@
     outline: 1px;
     background-color: transparent;
     border-radius: 50%
-
-    
 }
 
 .slick-dots li button:hover,
@@ -174,20 +176,20 @@
     line-height: 20px;
     position: absolute;
     top: 0;
-    left: -2px;
+    left: -3px;
     bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    right: -2px;
+    width: 105%;
+    height: 105%;
     content: '•';
     text-align: center;
     opacity: 1;
-    color: white;
+    color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: black;
+    color: white;
 }

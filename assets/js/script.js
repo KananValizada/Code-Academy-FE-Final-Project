@@ -81,8 +81,8 @@ let aboutCounter2 = new CountUp("about-count2", 0, 152, 0, 5, {  
 let waypoint1 = new Waypoint({
     element: document.getElementById('about-count'),
     handler: function(direction) {
-            aboutCounter1.start();
-            aboutCounter2.start();
+        aboutCounter1.start();
+        aboutCounter2.start();
     },
     offset: '100%'
 });
@@ -114,10 +114,10 @@ let Counter4 = new CountUp("counter4", 0, 1200, 0, 5, {  
 let waypoint2 = new Waypoint({
     element: document.getElementById('counter'),
     handler: function(direction) {
-            Counter1.start();
-            Counter2.start();
-            Counter3.start();
-            Counter4.start();
+        Counter1.start();
+        Counter2.start();
+        Counter3.start();
+        Counter4.start();
     },
     offset: '70%'
 });
@@ -131,3 +131,13 @@ $('.ourClient__slider').slick({
 
 });
 $(".slick-slide").css("outline", "none")
+    // Fixed
+let waypoint3 = new Waypoint({
+    element: document.getElementById('header__navbarWrapper'),
+    handler: function(direction) {
+        $("#header__navbarWrapper").css("position", "fixed")
+        $("#header__navbarWrapper").css("z-index", "999")
+
+    },
+    offset: '0%'
+});

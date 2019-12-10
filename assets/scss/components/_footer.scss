@@ -1,0 +1,129 @@
+    .footer {
+        background-color: #343a40;
+        color: white;
+        &__row {
+            display: flex;
+            line-height: 1.2;
+            padding: 6rem 0;
+            justify-content: space-between;
+            &-contact {
+                width: 25%;
+                img {
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                }
+                &-text {
+                    margin-bottom: 15px;
+                    font-size: 18px
+                }
+                &-adress,
+                &-mail,
+                &-number {
+                    margin-bottom: 10px;
+                    i {
+                        margin-right: 10px
+                    }
+                    padding-left: 15px;
+                }
+                &-mail {
+                    @include transition(all 0.5s);
+                    padding-left: 13px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $primary-color
+                    }
+                }
+            }
+            &-links {
+                width: 18%;
+                &-title {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 2;
+                    margin-bottom: 10px
+                }
+                &-options {
+                    line-height: 2;
+                    li {
+                        @include transition(all 0.5s);
+                        cursor: pointer;
+                        &:hover {
+                            transform: translateX(5px);
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+            &-posts {
+                width: 26%;
+                &-title {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 2;
+                    margin-bottom: 10px
+                }
+                &-item {
+                    display: flex;
+                    margin-bottom: 15px;
+                    &-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        @include transition(all 0.5s);
+                        &:hover {
+                            color: $primary-color
+                        }
+                        span {
+                            color: lighten($subtitle-color, 20);
+                            font-size: 12px;
+                        }
+                    }
+                    img {
+                        margin-right: 10px
+                    }
+                }
+            }
+            &-subscribe {
+                width: 30%;
+                &-title {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 2;
+                    margin-bottom: 10px
+                }
+                &-text {
+                    margin-bottom: 10px;
+                    text-align: justify;
+                }
+                &-input {
+                    position: relative;
+                    input {
+                        padding: 10px;
+                        width: 94%;
+                    }
+                    button {
+                        padding: 10px 15px;
+                        position: absolute;
+                        border-radius: 5px;
+                        right: 4px;
+                        bottom: calc(100% / 2 - 18px)
+                    }
+                }
+                &-icon {
+                    display: flex;
+                    li {
+                        margin-right: 6px;
+                        padding: 10px;
+                        background-color: #494e53;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        @include transition(all 0.5s);
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
