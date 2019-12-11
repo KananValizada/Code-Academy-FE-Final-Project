@@ -27,6 +27,7 @@
             position: relative;
             border-radius: 15px;
             overflow: hidden;
+            height: 16vw;
             width: 31%;
             margin-bottom: 20px;
             margin-right: 2%;
@@ -35,16 +36,16 @@
             }
             &:hover a {
                 opacity: 1;
-                top: -150px
+                top: -10vw
             }
             &:hover p {
                 opacity: 1;
-                top: -134px
+                top: -9vw
             }
             &:before {
                 content: "";
                 position: absolute;
-                bottom: 55px;
+                bottom: 0px;
                 border-radius: 15px;
                 right: 0;
                 top: 0;
@@ -55,21 +56,33 @@
             }
             img {
                 width: 100%;
-                border-radius: 15px
+                border-radius: 15px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    border-radius: 15px;
+                    right: 0;
+                    top: 0;
+                    left: 0;
+                    z-index: 4;
+                    opacity: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
             }
             &-hover {
                 &-icon {
                     opacity: 0;
                     position: relative;
-                    top: -130px;
+                    top: -5vw;
                     padding: 15px;
                     z-index: 10;
-                    @include transition(all 0.5s)
+                    @include transition(all 0.5s);
                 }
                 &-text {
                     opacity: 0;
                     position: relative;
-                    top: -114px;
+                    top: -2vw;
                     left: calc(100% / 2 - 4rem);
                     font-size: 20px;
                     margin-top: 15px;

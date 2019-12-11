@@ -1,87 +1,82 @@
-.ourBlog{
+.ourBlog {
     background-color: #f7f7f7;
     padding-bottom: 5rem;
-    &__tabs{
+    &__tabs {
         display: flex;
         justify-content: space-between;
-        &-item{
+        &-item {
             width: 32%;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            &:hover .ourBlog__tabs-item-img:after{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            &:hover .ourBlog__tabs-item-img:after {
                 opacity: 1;
             }
-            &:hover .ourBlog__tabs-item-img-hover{
+            &:hover .ourBlog__tabs-item-img-hover {
                 opacity: 1;
                 top: calc(100% / 2 - 40px);
             }
-            &-img{
+            &-img {
                 position: relative;
                 cursor: pointer;
-                &:after{
+                &:after {
                     content: "";
                     position: absolute;
                     opacity: 0;
-                    top:0;
+                    top: 0;
                     left: 0;
                     bottom: 0;
                     right: 0;
-                    background-color: rgba(0,0,0,0.4);
+                    background-color: rgba(0, 0, 0, 0.4);
                     @include transition(all 0.5s);
                 }
-                &-hover{
+                &-hover {
                     opacity: 0;
                     top: calc(100% / 2 + 50px);
                     @include transition(all 0.5s);
                     z-index: 10;
                 }
-                img{
+                img {
                     width: 100%;
                 }
-
             }
-            &-texts{
+            &-texts {
                 padding: 15px;
-                a{
+                a {
                     text-decoration: none;
                     color: black
                 }
-                
-
             }
-            &-title{
+            &-title {
                 margin-bottom: 15px;
                 font-weight: 700;
                 font-size: 18px
             }
-            &-text{
+            &-text {
                 line-height: 1.2;
                 margin-bottom: 10px;
-                color:$subtitle-color;
+                color: $subtitle-color;
             }
-            &-foot{
+            &-foot {
                 border-top: 1px solid black;
-                padding:20px 15px;
-                i{
-                    color:$primary-color;
+                padding: 20px 15px;
+                i {
+                    color: $primary-color;
                 }
-                span{
+                span {
                     margin-right: 10px
                 }
-              
             }
-            
         }
     }
-    &__button{
+    &__button {
         display: flex;
         justify-content: center;
         padding-top: 40px;
-        button{
+        button {
             padding: 15px 30px;
             font-size: 22px;
-            i{
+            i {
                 font-size: 16px;
                 margin-left: 10px;
             }

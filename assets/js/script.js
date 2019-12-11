@@ -150,48 +150,94 @@ $(window).load(function() {
                 })
 
             }
-
-
-
         },
         // offset: '-30%'
     });
 
+    //OUR GALLERY 
 
+    let ourGalleryItem = $(".ourGallery__tabs-item")
+    let ourGalleryMenu = $(".ourGallery__menu li")
+    ourGalleryMenu.on("click", (event) => {
+        ourGalleryMenu.removeClass("active")
+        $(event.target).addClass("active")
+        let dataKey = $(event.target).attr("datakey")
+        ourGalleryItem.fadeOut(300)
+        if (dataKey) {
+            $(`.${dataKey}`).fadeIn(500)
+        } else {
+            ourGalleryItem.fadeIn(500)
+        }
+    })
 
+    // ANIMATIONS
 
+    let whyChoose = new Waypoint({
+        element: document.getElementById('whyChoose'),
+        handler: function(direction) {
+            $(".whyChoose__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
 
-
-
-
-
-
-
-    //ISOTOP 
-    var $container = $('.ourGallery__tabs');
-    // $container.isotope({
-    //     filter: '*',
-    //     animationOptions: {
-    //         duration: 750,
-
-    //         queue: false
-    //     }
-    // });
-
-    $('.ourGallery__menu li').click(function() {
-
-        $('.ourGallery__menu .active').removeClass('active');
-        $(this).addClass('active');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-
-                queue: false
-            }
-        });
-        return false;
+        },
+        offset: '100%'
     });
+    let whyChooseTabs = new Waypoint({
+        element: document.getElementById('whyChoose__tabs'),
+        handler: function(direction) {
+            $(".whyChoose__tabs").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '110%'
+    });
+    let popGallery = new Waypoint({
+        element: document.getElementById('popularCategories'),
+        handler: function(direction) {
+            $(".popularCategories__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '100%'
+    });
+    let popGalleryTabs = new Waypoint({
+        element: document.getElementById('popularCategories__tabs'),
+        handler: function(direction) {
+            $(".popularCategories__tabs").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '110%'
+    });
+    let about = new Waypoint({
+        element: document.getElementById('about'),
+        handler: function(direction) {
+            $(".about__text").css({
+                "animation-name": "slideInLeft",
+                "animation-duration": "2s"
+            })
+            $(".about__video").css({
+                "animation-name": "slideInRight",
+                "animation-duration": "1s"
+            })
+
+        },
+        offset: '100%'
+    });
+
+
+
+})
+
+$('.ourGallery__tabs-item-hover-icon').magnificPopup({
+    type: 'image'
+
+    // other options
 });

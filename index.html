@@ -13,6 +13,8 @@
     <!-- SLICK CARUSEL -->
     <link rel="stylesheet" type="text/css" href="assets/scss/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/scss/slick-theme.css" />
+    <link rel="stylesheet" href="assets/magnific-popup.css">
+    <link rel="stylesheet" href="assets/scss/animate.css">
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 
@@ -149,13 +151,13 @@
         <!-- END SLIDER -->
     </section>
     <!-- WHY CHOOSE SECT  -->
-    <section class="whyChoose">
+    <section class="whyChoose" id="whyChoose">
         <div class="container">
-            <div class="sectHeader">
+            <div class="sectHeader whyChoose__header">
                 <div class="sectHeader__title">Why Choose Eduglobal</div>
                 <div class="sectHeader__text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
             </div>
-            <div class="whyChoose__tabs">
+            <div class="whyChoose__tabs" id="whyChoose__tabs">
                 <div class="whyChoose__tabs-item">
                     <div class="whyChoose__tabs-item-img bg-red">
                         <img src="assets/img/book.png" alt="">
@@ -182,13 +184,13 @@
     </section>
     <!-- END WHY CHOOSE SECT -->
     <!-- POPULAR CATAGORIES SECT -->
-    <section class="popularCategories">
+    <section class="popularCategories" id="popularCategories">
         <div class="container">
-            <div class="sectHeader">
+            <div class="sectHeader popularCategories__header">
                 <div class="sectHeader__title">Most Popular Categories</div>
                 <div class="sectHeader__text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
             </div>
-            <div class="popularCategories__tabs">
+            <div class="popularCategories__tabs" id="popularCategories__tabs">
                 <div class="popularCategories__tabs-item bg-red">
                     <i class="fa fa-globe"></i>
                     <p>Language</p>
@@ -242,7 +244,7 @@
     </section>
     <!-- END POPULAR CATAGORIES SECT -->
     <!-- ABOUT SECT -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__text">
             <div class="about__text-box">
                 <div class="about__text-title">About Us</div>
@@ -626,121 +628,121 @@
                 <div class="sectHeader__text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
             </div>
             <ul class="ourGallery__menu">
-                <li class="active" data-filter="*">All</li>
-                <li data-filter=".library">Library</li>
-                <li data-filter=".campus">Campus</li>
-                <li data-filter=".events">Events</li>
+                <li class="active">All</li>
+                <li datakey="library">Library</li>
+                <li datakey="campus">Campus</li>
+                <li datakey="events">Events</li>
             </ul>
             <div class="ourGallery__tabs">
-                <div class="ourGallery__tabs-item events">
+                <div class="events ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small1_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item1.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item library campus">
+                <div class="library campus ourGallery__tabs-item  ">
                     <img src="assets/img/gallery_item_small2_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item2.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item tabs-item-slide library">
+                <div class="library ourGallery__tabs-item tabs-item-slide ">
                     <div>
                         <img src="assets/img/gallery_item_small3_360X240.jpg" alt="">
-                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item3.jpg">
                             <i class="far fa-image"></i>
                         </a>
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
                     <div>
                         <img src="assets/img/gallery_item_small4_360X240.jpg" alt="">
-                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item3.jpg">
                             <i class="far fa-image"></i>
                         </a>
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
                 </div>
-                <div class="ourGallery__tabs-item campus">
+                <div class="campus ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small5_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item4.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item tabs-item-slide events">
+                <div class="events ourGallery__tabs-item tabs-item-slide ">
                     <div>
                         <img src="assets/img/gallery_item_small6_360X240.jpg" alt="">
-                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item5.jpg">
                             <i class="far fa-image"></i>
                         </a>
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
                     <div>
                         <img src="assets/img/gallery_item_small7_360X240.jpg" alt="">
-                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item5.jpg">
                             <i class="far fa-image"></i>
                         </a>
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
 
                 </div>
-                <div class="ourGallery__tabs-item library campus">
+                <div class="campus ourGallery__tabs-item library ">
                     <img src="assets/img/gallery_item_small8_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item6.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item campus">
+                <div class="campus ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small9_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item7.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item library">
+                <div class="library ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small10_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item8.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item events">
+                <div class="events ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small11_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item9.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item tabs-item-slide events">
+                <div class="events ourGallery__tabs-item tabs-item-slide ">
                     <div>
                         <img src="assets/img/gallery_item_small12_360X240.jpg" alt="">
-                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item10.jpg">
                             <i class="far fa-image"></i>
                         </a>
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
                     <div>
                         <img src="assets/img/gallery_item_small13_360X240.jpg" alt="">
-                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                        <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item10.jpg">
                             <i class="far fa-image"></i>
                         </a>
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
 
                 </div>
-                <div class="ourGallery__tabs-item library">
+                <div class="library ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small14_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item11.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item events">
+                <div class="events ourGallery__tabs-item ">
                     <img src="assets/img/gallery_item_small15_360X240.jpg" alt="">
-                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
+                    <a class="ourGallery__tabs-item-hover-icon iconStyle" href="assets/img/gallery_item12.jpg">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
@@ -1100,7 +1102,7 @@
     </section>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>

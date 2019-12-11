@@ -240,7 +240,6 @@ table {
 
 .ourGallery .slick-list {
   z-index: 1;
-  height: 80%;
   border-radius: 15px;
 }
 
@@ -1271,6 +1270,7 @@ table {
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+  height: 16vw;
   width: 31%;
   margin-bottom: 20px;
   margin-right: 2%;
@@ -1282,18 +1282,18 @@ table {
 
 .ourGallery__tabs-item:hover a {
   opacity: 1;
-  top: -150px;
+  top: -10vw;
 }
 
 .ourGallery__tabs-item:hover p {
   opacity: 1;
-  top: -134px;
+  top: -9vw;
 }
 
 .ourGallery__tabs-item:before {
   content: "";
   position: absolute;
-  bottom: 55px;
+  bottom: 0px;
   border-radius: 15px;
   right: 0;
   top: 0;
@@ -1308,10 +1308,23 @@ table {
   border-radius: 15px;
 }
 
+.ourGallery__tabs-item img:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  border-radius: 15px;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .ourGallery__tabs-item-hover-icon {
   opacity: 0;
   position: relative;
-  top: -130px;
+  top: -5vw;
   padding: 15px;
   z-index: 10;
   transition: all 0.5s;
@@ -1322,7 +1335,7 @@ table {
 .ourGallery__tabs-item-hover-text {
   opacity: 0;
   position: relative;
-  top: -114px;
+  top: -2vw;
   left: calc(100% / 2 - 4rem);
   font-size: 20px;
   margin-top: 15px;
