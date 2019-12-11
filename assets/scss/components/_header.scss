@@ -82,6 +82,10 @@
             }
         }
     }
+    &__navbarWrapper {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
     &__navbar {
         display: flex;
         justify-content: space-between;
@@ -112,11 +116,29 @@
                 z-index: 20;
                 position: absolute;
                 width: 120px;
-                border: 1px solid;
-                top: 40px;
+                top: 100%;
                 display: none;
                 color: black;
                 background-color: white;
+                &-galery {
+                    position: relative;
+                    &:hover ul {
+                        display: block;
+                    }
+                    i {
+                        margin-left: 50px !important;
+                    }
+                    ul {
+                        display: none;
+                        background-color: white;
+                        color: black;
+                        position: absolute;
+                        left: 100%;
+                        width: 170%;
+                        top: 10%;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    }
+                }
                 li {
                     padding: 10px 5px;
                 }

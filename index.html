@@ -24,7 +24,7 @@
             <a href="#" class="header__tutorials-link">Get 30% off</a>
             <i class="fas fa-times header__tutorials-btn"></i>
         </h3>
-        <div class="container header__contact ">
+        <div class="container header__contact " id="header__contact">
             <div class="header__contact-mailNumber">
                 <p>
                     <i class="fas fa-mobile-alt"></i>123-456-7890
@@ -56,7 +56,7 @@
 
             </div>
         </div>
-        <div id="header__navbarWrapper">
+        <div class="header__navbarWrapper">
             <div class="header__navbar container">
                 <img class="header__navbar-logo" src="assets/img/logo_dark.png"></img>
                 <ul class="header__navbar-menu">
@@ -73,7 +73,15 @@
                     <li class="header__navbar-menu-list">Pages<i class="fas fa-chevron-down"></i>
                         <ul class="header__navbar-menu-subList">
                             <li>About us </li>
-                            <li>Gallery</li>
+                            <li class="header__navbar-menu-subList-galery">Gallery
+                                <i class="fas fa-chevron-right"></i>
+                                <ul>
+                                    <li>Gallery 3 Column Grid</li>
+                                    <li>Gallery 4 Column Grid</li>
+                                    <li>Gallery 3 Column Masonry</li>
+                                    <li>Gallery 4 Column Masonry</li>
+                                </ul>
+                            </li>
                             <li>Fag</li>
                             <li>404 Page</li>
                         </ul>
@@ -618,27 +626,27 @@
                 <div class="sectHeader__text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
             </div>
             <ul class="ourGallery__menu">
-                <li class="active">All</li>
-                <li>Library</li>
-                <li>Campus</li>
-                <li>Events</li>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".library">Library</li>
+                <li data-filter=".campus">Campus</li>
+                <li data-filter=".events">Events</li>
             </ul>
             <div class="ourGallery__tabs">
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item events">
                     <img src="assets/img/gallery_item_small1_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item library campus">
                     <img src="assets/img/gallery_item_small2_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item tabs-item-slide">
+                <div class="ourGallery__tabs-item tabs-item-slide library">
                     <div>
                         <img src="assets/img/gallery_item_small3_360X240.jpg" alt="">
                         <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
@@ -654,14 +662,14 @@
                         <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                     </div>
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item campus">
                     <img src="assets/img/gallery_item_small5_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item tabs-item-slide">
+                <div class="ourGallery__tabs-item tabs-item-slide events">
                     <div>
                         <img src="assets/img/gallery_item_small6_360X240.jpg" alt="">
                         <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
@@ -678,35 +686,35 @@
                     </div>
 
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item library campus">
                     <img src="assets/img/gallery_item_small8_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item campus">
                     <img src="assets/img/gallery_item_small9_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item library">
                     <img src="assets/img/gallery_item_small10_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item events">
                     <img src="assets/img/gallery_item_small11_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item tabs-item-slide">
+                <div class="ourGallery__tabs-item tabs-item-slide events">
                     <div>
                         <img src="assets/img/gallery_item_small12_360X240.jpg" alt="">
                         <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
@@ -723,14 +731,14 @@
                     </div>
 
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item library">
                     <img src="assets/img/gallery_item_small14_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
                     </a>
                     <p class="ourGallery__tabs-item-hover-text">Galley Title</p>
                 </div>
-                <div class="ourGallery__tabs-item">
+                <div class="ourGallery__tabs-item events">
                     <img src="assets/img/gallery_item_small15_360X240.jpg" alt="">
                     <a class="ourGallery__tabs-item-hover-icon iconStyle" href="#">
                         <i class="far fa-image"></i>
@@ -1092,6 +1100,7 @@
     </section>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
