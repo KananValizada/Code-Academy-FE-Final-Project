@@ -1397,7 +1397,7 @@ table {
 
 .ourTeachers__tabs-item:hover .ourTeachers__tabs-item-img-hover {
   opacity: 1;
-  padding-bottom: 10rem;
+  padding-bottom: 8vw;
 }
 
 .ourTeachers__tabs-item-img {

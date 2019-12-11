@@ -32,14 +32,13 @@
             overflow: hidden;
             text-align: center;
             background-color: white;
-            &:hover .ourTeachers__tabs-item-img-hover{
+            &:hover .ourTeachers__tabs-item-img-hover {
                 opacity: 1;
-                padding-bottom: 10rem
-
+                padding-bottom: 8vw
             }
             &-img {
                 position: relative;
-                &-hover{
+                &-hover {
                     opacity: 0;
                     position: absolute;
                     left: 0px;
@@ -48,25 +47,24 @@
                     align-items: flex-end;
                     bottom: 0;
                     display: flex;
-                    background-color: rgba(0,0,0,0.4);
+                    background-color: rgba(0, 0, 0, 0.4);
                     justify-content: center;
                     @include transition(all 0.5s);
-                    ul{
+                    ul {
                         list-style: none;
                         display: flex;
                         width: 50%;
                         justify-content: space-between;
                         color: white;
-                        li{
+                        li {
                             cursor: pointer;
-                            &:hover{
-                                color:$primary-color
+                            &:hover {
+                                color: $primary-color
                             }
                         }
-   
                     }
                 }
-                img{
+                img {
                     width: 100%
                 }
                 margin-bottom: 10px;

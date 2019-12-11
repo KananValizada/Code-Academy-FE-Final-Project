@@ -88,25 +88,25 @@ $(window).load(function() {
         offset: '100%'
     });
     //START COUNTER SECT
-    let Counter1 = new CountUp("counter1", 0, 1800, 0, 5, {  
+    let Counter1 = new CountUp("counter1", 0, 1800, 0, 16, {  
         useEasing: true,
         useGrouping: true,
         separator: '',
         decimal: '.',
     });
-    let Counter2 = new CountUp("counter2", 0, 70, 0, 5, {  
+    let Counter2 = new CountUp("counter2", 0, 70, 0, 16, {  
         useEasing: true,
         useGrouping: true,
         separator: '',
         decimal: '.',
     });
-    let Counter3 = new CountUp("counter3", 0, 700, 0, 5, {  
+    let Counter3 = new CountUp("counter3", 0, 700, 0, 16, {  
         useEasing: true,
         useGrouping: true,
         separator: '',
         decimal: '.',
     });
-    let Counter4 = new CountUp("counter4", 0, 1200, 0, 5, {  
+    let Counter4 = new CountUp("counter4", 0, 1200, 0, 16, {  
         useEasing: true,
         useGrouping: true,
         separator: '',
@@ -115,12 +115,17 @@ $(window).load(function() {
     let waypoint2 = new Waypoint({
         element: document.getElementById('counter'),
         handler: function(direction) {
+            $(".counter__wrapper-item").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
             Counter1.start();
             Counter2.start();
             Counter3.start();
             Counter4.start();
+
         },
-        offset: '70%'
+        offset: '110%'
     });
     //END COUNTER SECT
     $('.ourClient__slider').slick({
@@ -162,15 +167,15 @@ $(window).load(function() {
         ourGalleryMenu.removeClass("active")
         $(event.target).addClass("active")
         let dataKey = $(event.target).attr("datakey")
-        ourGalleryItem.fadeOut(300)
+        ourGalleryItem.fadeOut()
         if (dataKey) {
-            $(`.${dataKey}`).fadeIn(500)
+            $(`.${dataKey}`).fadeIn()
         } else {
-            ourGalleryItem.fadeIn(500)
+            ourGalleryItem.fadeIn()
         }
     })
 
-    // ANIMATIONS
+    //////////////// ANIMATIONS START///////////////
 
     let whyChoose = new Waypoint({
         element: document.getElementById('whyChoose'),
@@ -219,7 +224,7 @@ $(window).load(function() {
     let about = new Waypoint({
         element: document.getElementById('about'),
         handler: function(direction) {
-            $(".about__text").css({
+            $(".about__text-box *").css({
                 "animation-name": "slideInLeft",
                 "animation-duration": "2s"
             })
@@ -231,7 +236,160 @@ $(window).load(function() {
         },
         offset: '100%'
     });
+    let ourCourses = new Waypoint({
+        element: document.getElementById('ourCourses'),
+        handler: function(direction) {
+            $(".ourCourses__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
 
+        },
+        offset: '100%'
+    });
+    let ourCoursesTabs = new Waypoint({
+        element: document.getElementById('ourCourses__tabs'),
+        handler: function(direction) {
+            $(".ourCourses__tabs-item").slice(0, 3).css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '110%'
+    });
+    let ourCoursesTabsHalf = new Waypoint({
+        element: document.getElementById('ourCourses__tabs-midle'),
+        handler: function(direction) {
+            $(".ourCourses__tabs-item").slice(3, 6).css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '110%'
+    });
+    let upcomingEvents = new Waypoint({
+        element: document.getElementById('upcomingEvents'),
+        handler: function(direction) {
+            $(".upcomingEvents__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '100%'
+    });
+    let upcomingEventsTabs = new Waypoint({
+        element: document.getElementById('upcomingEvents__tabs'),
+        handler: function(direction) {
+            $(".upcomingEvents__tabs").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '110%'
+    });
+    let onlineCourses = new Waypoint({
+        element: document.getElementById('onlineCourses'),
+        handler: function(direction) {
+            $(".onlineCourses__form").css({
+                "animation-name": "fadeInLeft",
+                "animation-duration": "2s"
+            })
+            $(".onlineCourses__img").css({
+                "animation-name": "fadeInRight",
+                "animation-duration": "2s"
+            })
+
+        },
+        offset: '110%'
+    });
+    let ourGallery = new Waypoint({
+        element: document.getElementById('ourGallery'),
+        handler: function(direction) {
+            $(".ourGallery__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '100%'
+    });
+    let ourGalleryTabs = new Waypoint({
+        element: document.getElementById('ourGallery__menu'),
+        handler: function(direction) {
+            $(".ourGallery__menu,.ourGallery__tabs").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '110%'
+    });
+    let ourTeachers = new Waypoint({
+        element: document.getElementById('ourTeachers'),
+        handler: function(direction) {
+            $(".ourTeachers__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '100%'
+    });
+    let ourTeachersTabs = new Waypoint({
+        element: document.getElementById('ourTeachers__tabs'),
+        handler: function(direction) {
+            $(".ourTeachers__tabs").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '110%'
+    });
+    let studentSay = new Waypoint({
+        element: document.getElementById('studentSay'),
+        handler: function(direction) {
+            $(".studentSay__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '100%'
+    });
+    let studentSaySlider = new Waypoint({
+        element: document.getElementById('studentSay__slider'),
+        handler: function(direction) {
+            $(".studentSay__slider").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '110%'
+    });
+    let ourBlogTabs = new Waypoint({
+        element: document.getElementById('ourBlog__tabs'),
+        handler: function(direction) {
+            $(".ourBlog__tabs").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+        },
+        offset: '110%'
+    });
+    let ourClient = new Waypoint({
+        element: document.getElementById('ourClient'),
+        handler: function(direction) {
+            $(".ourClient__header").css({
+                "animation-name": "fadeInUp",
+                "animation-duration": "2s"
+            })
+            $(".ourClient__slider").css({
+                "animation-name": "fadeIn",
+                "animation-duration": "4s"
+            })
+        },
+        offset: '100%'
+    });
 
 
 })
