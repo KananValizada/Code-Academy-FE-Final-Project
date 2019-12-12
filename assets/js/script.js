@@ -4,7 +4,6 @@ $(window).load(function() {
     })
     let navbarList = $(".header__navbar-menu-list")
     navbarList.on("mouseover", (e) => {
-        console.log(e.target)
         $(e.target).children("ul").show()
     })
     navbarList.on("mouseleave", (e) => {
@@ -38,6 +37,15 @@ $(window).load(function() {
     $(".header__slider").on("mouseleave", () => {
         $(".slick-arrow").hide(100)
     })
+
+    $(".slick-slider").on("afterChange",(ev,slick,current,next)=>{
+        $(".slick-slider h1").removeClass("headerSliderTransform")
+        $(".slick-current h1").addClass("headerSliderTransform")
+        $(".slick-slider p, .slick-slider div").removeClass("headerSliderText")
+        $(".slick-current p, .slick-current div").addClass("headerSliderText")
+    })
+
+    
 
     // POPULAR CATEGORIES SECT SLIDER
     $('.popularCategories__tabs').slick({

@@ -254,6 +254,18 @@ table {
   padding: 15px 0;
 }
 
+.headerSliderTransform {
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+.headerSliderText {
+  -webkit-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
+
 .header__tutorials {
   background-color: #F6475F;
   display: -webkit-box;
@@ -478,6 +490,7 @@ table {
 }
 
 .header__slider {
+  position: relative;
   color: white;
 }
 
@@ -485,11 +498,32 @@ table {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  opacity: 0;
 }
 
 .header__slider-text {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.header__slider-btn {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
 }
 
 .header__slider-btn button {
@@ -508,16 +542,22 @@ table {
 }
 
 .header__slider-1 {
+  position: relative;
+  z-index: 2;
   background: url("../img/banner1.jpg");
   background-size: cover;
 }
 
 .header__slider-2 {
+  position: relative;
+  z-index: 2;
   background: url("../img/banner2.jpg");
   background-size: cover;
 }
 
 .header__slider-3 {
+  position: relative;
+  z-index: 2;
   background: url("../img/banner3.jpg");
   background-size: cover;
 }

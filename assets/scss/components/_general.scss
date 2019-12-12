@@ -164,8 +164,6 @@
         border-radius: 15px;
     }
     
-    .tabs-item-slide {}
-    
     .count {
         animation-duration: 1s;
         animation-delay: 0s;
@@ -174,3 +172,11 @@
     .ourGallery__menu {
         padding: 15px 0;
     }
+   .headerSliderTransform{
+    transform:translateY(0px) !important;
+    opacity:1 !important;
+   }
+   .headerSliderText{
+    transform:translateY(0px) !important;
+    opacity: 1 !important;
+   }
