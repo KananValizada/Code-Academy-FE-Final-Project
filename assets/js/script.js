@@ -38,14 +38,14 @@ $(window).load(function() {
         $(".slick-arrow").hide(100)
     })
 
-    $(".slick-slider").on("afterChange",(ev,slick,current,next)=>{
+    $(".slick-slider").on("afterChange", (ev, slick, current, next) => {
         $(".slick-slider h1").removeClass("headerSliderTransform")
         $(".slick-current h1").addClass("headerSliderTransform")
         $(".slick-slider p, .slick-slider div").removeClass("headerSliderText")
         $(".slick-current p, .slick-current div").addClass("headerSliderText")
     })
 
-    
+
 
     // POPULAR CATEGORIES SECT SLIDER
     $('.popularCategories__tabs').slick({
@@ -53,7 +53,32 @@ $(window).load(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: false
+        arrows: false,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
 
@@ -142,6 +167,31 @@ $(window).load(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
 
     });
     $(".slick-slide").css("outline", "none")

@@ -1,6 +1,6 @@
     .container {
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
+        width: 100%;
+        padding: 0 15px;
         margin: 0 auto;
     }
     
@@ -172,11 +172,13 @@
     .ourGallery__menu {
         padding: 15px 0;
     }
-   .headerSliderTransform{
-    transform:translateY(0px) !important;
-    opacity:1 !important;
-   }
-   .headerSliderText{
-    transform:translateY(0px) !important;
-    opacity: 1 !important;
-   }
+    
+    .headerSliderTransform {
+        transform: translateY(0px) !important;
+        opacity: 1 !important;
+    }
+    
+    .headerSliderText {
+        transform: translateY(0px) !important;
+        opacity: 1 !important;
+    }

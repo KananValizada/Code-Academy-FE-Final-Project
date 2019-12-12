@@ -1,0 +1,57 @@
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+    .header__navbar-menu-list {
+        display: flex
+    }
+    .whyChoose__tabs-item {
+        width: 25%
+    }
+    .about__text-subtext {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about__text-box {
+        border-radius: 0 100px 100px 0;
+    }
+    .ourCourses__tabs-item {
+        width: 48%
+    }
+    .upcomingEvents__tabs-item {
+        width: 48%
+    }
+    .centered__item {
+        margin: 0 auto;
+    }
+    .onlineCourses__img {
+        max-width: 35%;
+        align-self: flex-end;
+    }
+    .onlineCourses__form-wrapper {
+        margin-bottom: 10%;
+        padding: 8%;
+    }
+    .ourTeachers__tabs-item {
+        width: 48%
+    }
+    .ourBlog__tabs-item {
+        width: 48%;
+    }
+    .footer__row {
+        &-contact {
+            width: 55%
+        }
+        &-links {
+            width: 42%
+        }
+        &-posts {
+            width: 42%
+        }
+        &-subscribe {
+            width: 55%;
+        }
+    }
+}

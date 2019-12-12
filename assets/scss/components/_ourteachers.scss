@@ -26,10 +26,12 @@
         justify-content: space-between;
         padding-bottom: 40px;
         padding-top: 20px;
+        flex-wrap: wrap;
         &-item {
             width: 23%;
             border-radius: 10px;
             overflow: hidden;
+            margin-bottom: 20px;
             text-align: center;
             background-color: white;
             &:hover .ourTeachers__tabs-item-img-hover {

@@ -7,7 +7,7 @@
         align-items: center;
         position: relative;
         &-box {
-            padding: 50px;
+            padding: 8%;
             border-radius: 0 200px 200px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             z-index: 2;
@@ -21,10 +21,10 @@
             margin-bottom: 20px;
         }
         &-subtext {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             line-height: 1.2;
             color: $subtitle-color;
-            font-size: 20px;
+            font-size: 14px;
         }
         &-numbers {
             display: flex;

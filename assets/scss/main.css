@@ -41,8 +41,8 @@ table {
 }
 
 .container {
-  padding-left: 10rem !important;
-  padding-right: 10rem !important;
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -305,9 +305,12 @@ table {
   opacity: 0.7;
 }
 
+.header__contactBg {
+  background-color: #343a40;
+}
+
 .header__contact {
   padding: 0.7rem 0;
-  background-color: #343a40;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,6 +446,7 @@ table {
 }
 
 .header__navbar-menu-list {
+  display: none;
   position: relative;
   margin: 0 10px;
 }
@@ -498,32 +502,32 @@ table {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
   opacity: 0;
 }
 
 .header__slider-text {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
   opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
 }
 
 .header__slider-btn {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
   opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
 }
 
 .header__slider-btn button {
@@ -535,31 +539,35 @@ table {
   margin-right: 10px;
 }
 
-.header__slider-1, .header__slider-2, .header__slider-3 {
+.header__slider-item {
   width: 100%;
-  padding: 17rem 0;
+  padding: 20vw 0;
   text-align: center;
+  position: relative;
 }
 
-.header__slider-1 {
-  position: relative;
-  z-index: 2;
+.header__slider-bg1 {
   background: url("../img/banner1.jpg");
-  background-size: cover;
+  background-size: 100% 130%;
+  background-position: 0 -8rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: soft-light;
 }
 
-.header__slider-2 {
-  position: relative;
-  z-index: 2;
+.header__slider-bg2 {
   background: url("../img/banner2.jpg");
-  background-size: cover;
+  background-size: 100% 130%;
+  background-position: 0 -8rem;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header__slider-3 {
-  position: relative;
-  z-index: 2;
+.header__slider-bg3 {
   background: url("../img/banner3.jpg");
-  background-size: cover;
+  background-size: 100% 130%;
+  background-position: 0 -8rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: soft-light;
 }
 
 .whyChoose {
@@ -574,6 +582,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .whyChoose__tabs-item {
@@ -584,7 +594,8 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
+  width: 38%;
+  margin-bottom: 25px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -697,7 +708,7 @@ table {
 }
 
 .about__text-box {
-  padding: 50px;
+  padding: 8%;
   border-radius: 0 200px 200px 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -714,10 +725,10 @@ table {
 }
 
 .about__text-subtext {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 1.2;
   color: #888888;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .about__text-numbers {
@@ -997,6 +1008,9 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .upcomingEvents__tabs-item {
@@ -1261,6 +1275,7 @@ table {
 }
 
 .onlineCourses__img img {
+  width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 20px;
@@ -1425,12 +1440,15 @@ table {
           justify-content: space-between;
   padding-bottom: 40px;
   padding-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .ourTeachers__tabs-item {
   width: 23%;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 20px;
   text-align: center;
   background-color: white;
 }
@@ -1558,11 +1576,14 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .ourBlog__tabs-item {
   width: 32%;
   border-radius: 15px;
+  margin-bottom: 20px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -1728,6 +1749,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__row-contact {
@@ -1926,5 +1949,82 @@ table {
 
 .subFooter__policies li:hover {
   color: #FFBC09;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .header__navbar-menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .whyChoose__tabs-item {
+    width: 25%;
+  }
+  .about__text-subtext {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about__text-box {
+    border-radius: 0 100px 100px 0;
+  }
+  .ourCourses__tabs-item {
+    width: 48%;
+  }
+  .upcomingEvents__tabs-item {
+    width: 48%;
+  }
+  .centered__item {
+    margin: 0 auto;
+  }
+  .onlineCourses__img {
+    max-width: 35%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .onlineCourses__form-wrapper {
+    margin-bottom: 10%;
+    padding: 8%;
+  }
+  .ourTeachers__tabs-item {
+    width: 48%;
+  }
+  .ourBlog__tabs-item {
+    width: 48%;
+  }
+  .footer__row-contact {
+    width: 55%;
+  }
+  .footer__row-links {
+    width: 42%;
+  }
+  .footer__row-posts {
+    width: 42%;
+  }
+  .footer__row-subscribe {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,9 +4,11 @@
     &__tabs {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         &-item {
             width: 32%;
             border-radius: 15px;
+            margin-bottom: 20px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             &:hover .ourBlog__tabs-item-img:after {

@@ -26,9 +26,11 @@
             }
         }
     }
+    &__contactBg {
+        background-color: #343a40;
+    }
     &__contact {
         padding: 0.7rem 0;
-        background-color: #343a40;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -109,6 +111,7 @@
                 }
             }
             &-list {
+                display: none;
                 position: relative;
                 margin: 0 10px;
             }
@@ -150,28 +153,26 @@
     }
     &__slider {
         position: relative;
-
-        
         color: white;
         &-title {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 20px;
-            transform:translateY(-20px);
-            @include transition(all 0.5s);
+            transform: translateY(-30px);
+            @include transition(all 2s);
             opacity: 0;
         }
         &-text {
             font-size: 1.5rem;
             margin-bottom: 20px;
-            transform:translateY(20px);
+            transform: translateY(30px);
             opacity: 0;
-            @include transition(all 0.5s);
+            @include transition(all 2s);
         }
         &-btn {
-            transform:translateY(20px);
+            transform: translateY(30px);
             opacity: 0;
-            @include transition(all 0.5s);
+            @include transition(all 2s);
             button {
                 border-radius: 5px;
             }
@@ -180,30 +181,32 @@
                 margin-right: 10px;
             }
         }
-        &-1,
-        &-2,
-        &-3 {
+        &-item {
             width: 100%;
-            padding: 17rem 0;
+            padding: 20vw 0;
             text-align: center;
-        }
-        &-1 {
             position: relative;
-            z-index: 2;
+        }
+        &-bg1 {
             background: url("../img/banner1.jpg");
-            background-size: cover;
+            background-size: 100% 130%;
+            background-position: 0 -8rem;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: soft-light;
         }
-        &-2 {
-            position: relative;
-            z-index: 2;
+        &-bg2 {
             background: url("../img/banner2.jpg");
-            background-size: cover;
+            background-size: 100% 130%;
+            background-position: 0 -8rem;
+            background-blend-mode: soft-light;
+            background-color: rgba(0, 0, 0, 0.4)
         }
-        &-3 {
-            position: relative;
-            z-index: 2;
+        &-bg3 {
             background: url("../img/banner3.jpg");
-            background-size: cover;
+            background-size: 100% 130%;
+            background-position: 0 -8rem;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: soft-light;
         }
     }
 }
