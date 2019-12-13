@@ -1,4 +1,7 @@
 $(window).load(function() {
+    setTimeout(() => {
+        $(".showbox").fadeOut(1000)
+    }, 2500)
     $(".header__tutorials-btn").click(() => {
         $(".header__tutorials").hide()
     })
@@ -26,7 +29,7 @@ $(window).load(function() {
         arrows: true,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
     });
 
     // slick
@@ -56,6 +59,17 @@ $(window).load(function() {
         arrows: false,
         responsive: [{
                 breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                }
+            },
+
+            {
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
@@ -94,7 +108,17 @@ $(window).load(function() {
     $('.studentSay__slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        responsive: [{
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+            }
+        }]
 
     });
 
@@ -168,9 +192,9 @@ $(window).load(function() {
         autoplaySpeed: 2000,
         arrows: false,
         responsive: [{
-                breakpoint: 1200,
+                breakpoint: 991,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
@@ -178,9 +202,9 @@ $(window).load(function() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },

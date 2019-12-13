@@ -11,47 +11,62 @@
     .about__text-subtext {
         font-size: 20px;
     }
+    .header__slider-title {
+        font-size: 3rem;
+    }
+    .header__slider-text {
+        font-size: 1.4rem;
+    }
+    .ourCourses__tabs-item,
+    .upcomingEvents__tabs-item,
+    .ourBlog__tabs-item {
+        width: 31%
+    }
+    .ourTeachers__tabs-item {
+        width: 23%;
+    }
+    .header__slider-item {
+        padding: 25vw 0;
+    }
+    .footer__row {
+        &-posts {
+            width: 26%
+        }
+        &-subscribe {
+            width: 30%;
+        }
+    }
+    .ourTeachers__tabs-item .ourTeachers__tabs-item-img-hover {
+        &:hover {
+            padding-bottom: 8vw;
+        }
+    }
 }
 
 @media only screen and (max-width: 991px) {
+    .header__navbar-burger {
+        display: block;
+    }
     .about__text-box {
         border-radius: 0 100px 100px 0;
     }
-    .ourCourses__tabs-item {
-        width: 48%
-    }
-    .upcomingEvents__tabs-item {
-        width: 48%
+    .header__navbar-menu-contact {
+        display: none;
     }
     .centered__item {
         margin: 0 auto;
-    }
-    .onlineCourses__img {
-        max-width: 35%;
-        align-self: flex-end;
     }
     .onlineCourses__form-wrapper {
         margin-bottom: 10%;
         padding: 8%;
     }
-    .ourTeachers__tabs-item {
-        width: 48%
-    }
-    .ourBlog__tabs-item {
-        width: 48%;
-    }
     .footer__row {
         &-contact {
-            width: 55%
+            width: 65%
         }
         &-links {
-            width: 42%
-        }
-        &-posts {
-            width: 42%
-        }
-        &-subscribe {
-            width: 55%;
+            width: 32%;
+            margin-bottom: 30px;
         }
     }
 }

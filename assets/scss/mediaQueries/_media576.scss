@@ -2,4 +2,122 @@
     .container {
         max-width: 540px;
     }
+    .header__slider-item {
+        padding: 50vw 0;
+    }
+    .ourCourses__tabs-item,
+    .upcomingEvents__tabs-item,
+    .ourTeachers__tabs-item,
+    .ourBlog__tabs-item {
+        width: 48%
+    }
+    .onlineCourses__img {
+        max-width: 35%;
+        align-self: flex-end;
+    }
+    .ourGallery__tabs-item:hover a {
+        top: -13vw
+    }
+    .ourGallery__tabs-item:hover p {
+        top: -11vw
+    }
+    .ourTeachers__tabs-item .ourTeachers__tabs-item-img-hover {
+        &:hover {
+            padding-bottom: 20vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .ourGallery__tabs {
+        flex-wrap: wrap;
+        &-item {
+            width: 100%;
+            height: 230px;
+        }
+    }
+    .ourGallery__menu {
+        width: initial;
+        flex-wrap: wrap;
+        li {
+            width: 38%;
+            margin-bottom: 5px;
+            text-align: center
+        }
+    }
+    .ourGallery__tabs-item:hover a {
+        top: -30vw
+    }
+    .ourGallery__tabs-item:hover p {
+        top: -25vw
+    }
+    .ourTeachers__tabs-item {
+        width: 100%;
+    }
+    .onlineCourses {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__form {
+            width: 100%;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .ourBlog__tabs-item {
+        width: 100%;
+    }
+    .sectHeader__text,
+    .upcomingEvents__tabs-item {
+        width: initial;
+    }
+    .counter__wrapper {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        height: 23rem;
+        width: initial;
+        &-item {
+            width: 48%;
+        }
+    }
+    .header__tutorials {
+        display: block;
+        text-align: center;
+    }
+    .ourCourses__tabs-item {
+        width: initial;
+    }
+    .whyChoose__tabs-item {
+        width: initial;
+    }
+    .header__contact {
+        &-social {
+            flex-direction: column;
+            align-items: center;
+            ul {
+                margin-bottom: 5px;
+            }
+            ul li:last-child {
+                border-right: none;
+            }
+        }
+    }
+    .about {
+        flex-direction: column;
+        &__video {
+            width: 100%;
+        }
+        &__text {
+            position: static;
+            width: 100%;
+        }
+        &__text-box {
+            border-radius: initial;
+            position: initial;
+        }
+    }
 }

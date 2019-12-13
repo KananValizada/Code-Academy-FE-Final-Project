@@ -2,4 +2,19 @@
     .container {
         max-width: 1140px;
     }
+    .header__slider-item {
+        padding: 20vw 0;
+    }
+    .ourGallery__tabs-item:hover a {
+        top: -11vw
+    }
+    .ourGallery__tabs-item:hover p {
+        top: -10vw
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }
