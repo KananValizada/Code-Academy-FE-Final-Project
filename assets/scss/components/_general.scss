@@ -8,6 +8,10 @@
         display: block !important;
     }
     
+    .none {
+        display: none !important;
+    }
+    
     .btn {
         background-color: $primary-color;
         color: white;
@@ -181,4 +185,28 @@
     .headerSliderText {
         transform: translateY(0px) !important;
         opacity: 1 !important;
+    }
+    
+    .dropDownMenu {
+        flex-direction: column;
+        display: block;
+        position: absolute;
+        background-color: white;
+        top: 10%;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+    }
+    
+    .dropDownMenuList {
+        display: flex !important;
+        justify-content: space-between;
+        padding-right: 15px !important;
+        flex-wrap: wrap
+    }
+    
+    .dropDownMenuSubList {
+        position: relative !important;
+        width: 100% !important;
+        left: 0 !important;
     }

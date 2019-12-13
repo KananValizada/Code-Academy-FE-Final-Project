@@ -13,6 +13,12 @@
             width: 52%;
         }
     }
+    .ourGallery__tabs-item {
+        height: 150px;
+    }
+    .dropDownMenu {
+        top: 140px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -23,6 +29,9 @@
         &-subscribe {
             width: 100%;
         }
+    }
+    .getCoaching__text-title {
+        font-size: 18px
     }
     .subFooter {
         &__row {

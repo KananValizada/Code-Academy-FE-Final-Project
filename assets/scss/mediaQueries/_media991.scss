@@ -5,8 +5,14 @@
     .header__navbar-menu-list {
         display: flex
     }
+    .ourGallery__tabs-item {
+        height: 200px;
+    }
     .whyChoose__tabs-item {
         width: 25%
+    }
+    .header__navbar-mainMenu {
+        transform: initial !important;
     }
     .about__text-subtext {
         font-size: 20px;
@@ -41,11 +47,19 @@
             padding-bottom: 8vw;
         }
     }
+    .dropDownMenu {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .header__navbar-burger {
         display: block;
+    }
+    .header__navbar-menu-subList-galery ul {
+        left: 0%;
+        width: 100%;
+        top: 100%;
     }
     .about__text-box {
         border-radius: 0 100px 100px 0;

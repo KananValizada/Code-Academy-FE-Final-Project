@@ -2,6 +2,9 @@
     .container {
         max-width: 540px;
     }
+    .dropDownMenu {
+        top: 170px
+    }
     .header__slider-item {
         padding: 50vw 0;
     }
@@ -31,6 +34,9 @@
 @media only screen and (max-width: 576px) {
     .container {
         max-width: 540px;
+    }
+    .dropDownMenu {
+        top: 200px;
     }
     .ourGallery__tabs {
         flex-wrap: wrap;
@@ -116,7 +122,7 @@
             width: 100%;
         }
         &__text-box {
-            border-radius: initial;
+            border-radius: initial !important;
             position: initial;
         }
     }
