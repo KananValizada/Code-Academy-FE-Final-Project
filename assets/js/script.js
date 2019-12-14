@@ -38,16 +38,17 @@ $(window).load(function() {
         //BurgerMenu Functionality
     let burgerMenu = $(".header__navbar-burger")
     burgerMenu.click(() => {
+        burgerMenu.toggleClass("backgroundImage")
         $(".header__navbar-mainMenu").toggleClass("dropDownMenu")
         $(".header__navbar-menu-list").toggleClass("dropDownMenuList")
         $(".header__navbar-menu-subList").toggleClass("dropDownMenuSubList")
         if ($(".header__navbarWrapper").css("position") == "fixed") {
-            if ($(".dropDownMenu").css("top") == "200px") {
-                $(".dropDownMenu").css("transform", "translateY(-163px)")
+            if ($(".dropDownMenu").css("top") == "211px") {
+                $(".dropDownMenu").css("transform", "translateY(-173px)")
             } else if ($(".dropDownMenu").css("top") == "170px") {
                 $(".dropDownMenu").css("transform", "translateY(-150px)")
             } else {
-                $(".dropDownMenu").css("transform", "translateY(-100px)")
+                $(".dropDownMenu").css("transform", "translateY(-133px)")
             }
 
         } else {
@@ -272,12 +273,12 @@ $(window).load(function() {
                     "top": "0",
                     "width": "100%"
                 })
-                if ($(".dropDownMenu").css("top") == "200px") {
-                    $(".dropDownMenu").css("transform", "translateY(-163px)")
+                if ($(".dropDownMenu").css("top") == "211px") {
+                    $(".dropDownMenu").css("transform", "translateY(-173px)")
                 } else if ($(".dropDownMenu").css("top") == "170px") {
                     $(".dropDownMenu").css("transform", "translateY(-140px)")
                 } else {
-                    $(".dropDownMenu").css("transform", "translateY(-100px)")
+                    $(".dropDownMenu").css("transform", "translateY(-133px)")
                 }
 
             } else {

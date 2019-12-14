@@ -302,6 +302,42 @@ table {
   left: 0 !important;
 }
 
+.backgroundImage {
+  background-image: url("../img/close.png") !important;
+}
+
+.pages__header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 75px 0;
+  color: white;
+  font-size: 20px;
+}
+
+.pages__header-text a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.pages__header-text a:hover {
+  color: #FFBC09;
+}
+
+.pages__header-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .header__tutorials {
   background-color: #F6475F;
   display: -webkit-box;
@@ -2032,6 +2068,14 @@ table {
   color: #FFBC09;
 }
 
+.pageAbout {
+  background-image: url("../img/about_bg.jpg");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-blend-mode: color;
+}
+
 @media only screen and (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -2069,7 +2113,7 @@ table {
     max-width: 540px;
   }
   .dropDownMenu {
-    top: 200px;
+    top: 211px;
   }
   .ourGallery__tabs {
     -ms-flex-wrap: wrap;
@@ -2188,7 +2232,7 @@ table {
     height: 150px;
   }
   .dropDownMenu {
-    top: 140px;
+    top: 171px;
   }
 }
 

@@ -210,3 +210,29 @@
         width: 100% !important;
         left: 0 !important;
     }
+    
+    .backgroundImage {
+        background-image: url("../img/close.png") !important;
+    }
+    
+    // pages header
+    .pages__header-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 75px 0;
+        color: white;
+        font-size: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+            @include transition(all 0.5s);
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        h3 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
