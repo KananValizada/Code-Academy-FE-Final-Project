@@ -216,7 +216,16 @@
     }
     
     // pages header
-    .pages__header-text {
+
+
+    
+    .pages__header{
+        background-image: url("../img/about_bg.jpg");
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode: color;
+    &-text {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -236,3 +245,4 @@
             font-weight: 700;
         }
     }
+}

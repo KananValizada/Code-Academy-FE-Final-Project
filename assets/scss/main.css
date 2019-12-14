@@ -306,6 +306,14 @@ table {
   background-image: url("../img/close.png") !important;
 }
 
+.pages__header {
+  background-image: url("../img/about_bg.jpg");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: color;
+}
+
 .pages__header-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2066,14 +2074,6 @@ table {
   color: #FFBC09;
 }
 
-.pageAbout {
-  background-image: url("../img/about_bg.jpg");
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  background-blend-mode: color;
-}
-
 .aboutPage__about {
   padding-bottom: 8rem;
 }
@@ -2093,6 +2093,144 @@ table {
 
 .aboutPage__counter:after {
   background-color: white;
+}
+
+.courcesPage__ourCourses {
+  padding-top: 6rem;
+}
+
+.courcesPage__buttons {
+  color: #888888;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courcesPage__buttons li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.courcesPage__buttons li:hover {
+  background-color: #FFBC09;
+  color: white;
+}
+
+.courcesPage__buttons-hoverNone {
+  cursor: auto !important;
+}
+
+.courcesPage__buttons-hoverNone:hover {
+  background-color: initial !important;
+  color: black !important;
+}
+
+.contactPage__getInTouch {
+  padding-bottom: 6rem;
+}
+
+.contactPage__getInTouch-submits {
+  width: 40%;
+}
+
+.contactPage__getInTouch-submits form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactPage__getInTouch-submits form input, .contactPage__getInTouch-submits form textarea {
+  border: none;
+  width: 80%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contactPage__getInTouch-submits form .btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.contactPage__getInTouch-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contactPage__getInTouch-map {
+  width: 50%;
+}
+
+.contactPage__getInTouch-map iframe {
+  width: 100%;
+}
+
+.contactPage__information {
+  padding-bottom: 6rem;
+}
+
+.contactPage__information-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactPage__information-tabs-img {
+  opacity: 0.1;
+  width: 100%;
+}
+
+.contactPage__information-tabs-item {
+  border-radius: 15px;
+  position: relative;
+}
+
+.contactPage__information-tabs-text {
+  width: 24vw;
+  top: 4vw;
+  left: 3vw;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+.contactPage__information-tabs-text img {
+  width: 5vw;
+}
+
+.contactPage__information-tabs-text h4 {
+  font-size: 3vw;
+}
+
+.contactPage__information-tabs-text p {
+  font-size: 2vw;
 }
 
 @media only screen and (min-width: 576px) {
@@ -2262,6 +2400,18 @@ table {
   .footer__row-subscribe {
     width: 100%;
   }
+  .contactPage__getInTouch-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPage__getInTouch-map {
+    width: 100%;
+  }
+  .contactPage__getInTouch-submits {
+    width: 100%;
+  }
   .getCoaching__text-title {
     font-size: 18px;
   }
@@ -2401,6 +2551,20 @@ table {
   }
   .ourGallery__tabs-item:hover p {
     top: -8rem;
+  }
+  .contactPage__information-tabs-text {
+    width: 16rem;
+    top: 25%;
+    left: 11%;
+  }
+  .contactPage__information-tabs-text img {
+    width: 25%;
+  }
+  .contactPage__information-tabs-text h4 {
+    font-size: 20px;
+  }
+  .contactPage__information-tabs-text p {
+    font-size: 18px;
   }
 }
 

@@ -11,6 +11,21 @@
     .ourGallery__tabs-item:hover p {
         top: -8rem
     }
+    .contactPage__information-tabs-text{
+        img{
+            width: 25%;
+        }
+        
+        h4{
+            font-size: 20px;;
+        }
+        p{
+            font-size: 18px;
+        }
+        width: 16rem;
+        top: 25%;
+        left: 11%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
