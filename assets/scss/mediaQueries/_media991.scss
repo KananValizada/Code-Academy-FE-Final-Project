@@ -42,10 +42,10 @@
             width: 30%;
         }
     }
-    .ourTeachers__tabs-item .ourTeachers__tabs-item-img-hover {
-        &:hover {
-            padding-bottom: 8vw;
-        }
+    .ourTeachers__tabs-item:hover .ourTeachers__tabs-item-img-hover {
+      
+            padding-bottom: 7rem;
+        
     }
     .dropDownMenu {
         display: none !important;

@@ -1,7 +1,27 @@
 .pageAbout {
     background-image: url("../img/about_bg.jpg");
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-blend-mode: color;
+}
+.aboutPage {
+    &__about{
+        padding-bottom: 8rem;
+
+    }
+    &__counter{
+        background-image:initial ;
+        background-color: white;
+        .counter__wrapper-item{
+            color: black;
+            p{
+                color: $subtitle-color;
+            }
+        }
+        &:after{
+            background-color: white;
+        }
+
+    }
 }
