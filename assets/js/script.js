@@ -318,6 +318,16 @@ $(window).load(function() {
                 "animation-name": "fadeInUp",
                 "animation-duration": "2s"
             })
+            if(direction=="down"){
+                $(".toUp").css({
+                "opacity":"1"
+            })
+            }else{
+                $(".toUp").css({
+                    "opacity":"0" 
+                })
+
+            }
 
         },
         offset: '100%'
@@ -526,6 +536,7 @@ $(window).load(function() {
     });
 
     //////////////END ANIMATIONS////////////
+
 })
 
 $('.ourGallery__tabs-item-hover-icon').magnificPopup({
