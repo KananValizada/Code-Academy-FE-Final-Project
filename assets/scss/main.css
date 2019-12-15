@@ -2157,7 +2157,8 @@ table {
           justify-content: center;
 }
 
-.contactPage__getInTouch-submits form input, .contactPage__getInTouch-submits form textarea {
+.contactPage__getInTouch-submits form input,
+.contactPage__getInTouch-submits form textarea {
   border: none;
   width: 80%;
   padding: 5px 10px;
@@ -2209,13 +2210,14 @@ table {
 
 .contactPage__information-tabs-item {
   border-radius: 15px;
+  width: 31%;
   position: relative;
 }
 
 .contactPage__information-tabs-text {
   width: 24vw;
   top: 4vw;
-  left: 3vw;
+  left: 2vw;
   position: absolute;
   text-align: center;
   color: white;
@@ -2231,6 +2233,48 @@ table {
 
 .contactPage__information-tabs-text p {
   font-size: 2vw;
+}
+
+.courceDetail {
+  padding: 6rem 0;
+}
+
+.courceDetail__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.courceDetail__wrapper-details {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.courceDetail__wrapper-details-img {
+  position: relative;
+}
+
+.courceDetail__wrapper-details-img img {
+  width: 100%;
+}
+
+.courceDetail__wrapper-details-img p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.courceDetail__wrapper-details-img button {
+  padding: 5px 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 @media only screen and (min-width: 576px) {

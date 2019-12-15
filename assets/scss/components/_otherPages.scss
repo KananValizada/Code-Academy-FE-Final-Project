@@ -1,123 +1,148 @@
 .aboutPage {
-  &__about {
-    padding-bottom: 8rem;
-  }
-  &__counter {
-    background-image: initial;
-    background-color: white;
-    .counter__wrapper-item {
-      color: black;
-      p {
-        color: $subtitle-color;
-      }
+    &__about {
+        padding-bottom: 8rem;
     }
-    &:after {
-      background-color: white;
+    &__counter {
+        background-image: initial;
+        background-color: white;
+        .counter__wrapper-item {
+            color: black;
+            p {
+                color: $subtitle-color;
+            }
+        }
+        &:after {
+            background-color: white;
+        }
     }
-  }
 }
 
 .courcesPage {
-  &__ourCourses {
-    padding-top: 6rem;
-  }
-  &__buttons {
-    color: $subtitle-color;
-    margin-top: 3rem;
-    padding-bottom: 5rem;
-    display: flex;
-    width: 20rem;
-    margin: 0 auto;
-    justify-content: space-between;
-
-    li {
-      padding: 10px 15px;
-      cursor: pointer;
-      @include transition(all 0.5s);
-      &:hover {
-        background-color: $primary-color;
-        color: white;
-      }
+    &__ourCourses {
+        padding-top: 6rem;
     }
-    &-hoverNone {
-      cursor: auto !important;
-      &:hover {
-        background-color: initial !important;
-        color: black !important;
-      }
+    &__buttons {
+        color: $subtitle-color;
+        margin-top: 3rem;
+        padding-bottom: 5rem;
+        display: flex;
+        width: 20rem;
+        margin: 0 auto;
+        justify-content: space-between;
+        li {
+            padding: 10px 15px;
+            cursor: pointer;
+            @include transition(all 0.5s);
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+        &-hoverNone {
+            cursor: auto !important;
+            &:hover {
+                background-color: initial !important;
+                color: black !important;
+            }
+        }
     }
-  }
 }
+
 .contactPage__getInTouch {
     padding-bottom: 6rem;
-  &-submits {
-    width: 40%;
-    form {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-      input,textarea{
-          border: none;
-          width: 80%;
-          padding: 5px 10px;
-          margin-bottom: 10px;
-          font-size: 18px;
-      }
-      .btn{
-          align-self: flex-start;
-          padding: 10px 20px;
-          font-size:18px;
-      }
+    &-submits {
+        width: 40%;
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            input,
+            textarea {
+                border: none;
+                width: 80%;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            .btn {
+                align-self: flex-start;
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+        }
     }
-  }
-  &-data {
-    display: flex;
-    justify-content: flex-end;
-
-  }
-  &-map {
-    width: 50%;
-    iframe{
-        width: 100%;
+    &-data {
+        display: flex;
+        justify-content: flex-end;
     }
-  }
+    &-map {
+        width: 50%;
+        iframe {
+            width: 100%;
+        }
+    }
 }
-.contactPage__information{
+
+.contactPage__information {
     padding-bottom: 6rem;
-    &-tabs{
+    &-tabs {
         display: flex;
         justify-content: space-between;
-        &-img{
+        &-img {
             opacity: 0.1;
             width: 100%;
         }
-        &-item{
+        &-item {
             border-radius: 15px;
-            
+            width: 31%;
             position: relative;
-
         }
-        &-text{
-            img{
+        &-text {
+            img {
                 width: 5vw;
-    
             }
-            
-            h4{
-                font-size:3vw;
+            h4 {
+                font-size: 3vw;
             }
-            p{
+            p {
                 font-size: 2vw;
             }
             width: 24vw;
             top: 4vw;
-            left: 3vw;
+            left: 2vw;
             position: absolute;
             text-align: center;
             color: white;
-
         }
     }
+}
 
+.courceDetail {
+    padding: 6rem 0;
+    &__wrapper {
+        display: flex;
+        &-details {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            &-img {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                p {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                }
+                button {
+                    padding: 5px 10px;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
 }

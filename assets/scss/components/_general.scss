@@ -216,33 +216,30 @@
     }
     
     // pages header
-
-
-    
-    .pages__header{
+    .pages__header {
         background-image: url("../img/about_bg.jpg");
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-blend-mode: color;
-    &-text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 6rem 0;
-        color: white;
-        font-size: 20px;
-        a {
-            text-decoration: none;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-blend-mode: color;
+        &-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6rem 0;
             color: white;
-            @include transition(all 0.5s);
-            &:hover {
-                color: $primary-color;
+            font-size: 20px;
+            a {
+                text-decoration: none;
+                color: white;
+                @include transition(all 0.5s);
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            h3 {
+                font-size: 40px;
+                font-weight: 700;
             }
         }
-        h3 {
-            font-size: 40px;
-            font-weight: 700;
-        }
     }
-}
